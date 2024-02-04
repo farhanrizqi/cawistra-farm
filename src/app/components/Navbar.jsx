@@ -36,7 +36,9 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed -top-2  w-full transition-all duration-300 z-50 lg:px-20 ${
-        navbarSolid ? "bg-background shadow-lg" : "bg-transparent"
+        navbarSolid
+          ? "bg-transparent backdrop-blur-lg shadow-lg"
+          : "bg-transparent"
       }`}
     >
       <div className="container mx-auto px-5 flex justify-between items-center py-4">
