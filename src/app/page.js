@@ -75,9 +75,9 @@ export default function Home() {
               Let's Take a Look <br /> of Our Products
             </h1>
           </div>
-          <div className="flex justify-between items-center py-5 px-5 ">
-            <div className="flex gap-4">
-              <div className="flex flex-col">
+          <div className="flex justify-evenly items-center">
+            <div className="w-full h-full flex gap-4">
+              <div className="flex flex-col items-center">
                 <Image
                   src={sheepImage} // Ganti dengan path gambar sesuai struktur proyek Anda
                   alt="Farm"
@@ -99,7 +99,9 @@ export default function Home() {
               </div>
               <div className="flex flex-col items-center">
                 <div className="h-full flex justify-center items-center">
-                  <h1 className="h-full text-center text-lg pt-7">AQIQAH</h1>
+                  <h1 className="h-full text-center text-lg pt-7 px-2">
+                    AQIQAH
+                  </h1>
                 </div>
                 <a
                   target="_blank"
@@ -108,7 +110,7 @@ export default function Home() {
                   Shop Now
                 </a>
               </div>
-              <div className="flex flex-col">
+              <div className="flex flex-col items-center">
                 <Image
                   src={cowImage} // Ganti dengan path gambar sesuai struktur proyek Anda
                   alt="Farm"

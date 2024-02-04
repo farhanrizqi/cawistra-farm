@@ -61,8 +61,8 @@ const Navbar = () => {
           target="_blank"
           className={`py-2 px-4 rounded-full  transition-colors ${
             navbarSolid
-              ? "bg-white text-red-500 hover:bg-red-600 hover:text-white hover:border-2 hover:border-white"
-              : "bg-primary text-white hover:bg-red-600"
+              ? "bg-white text-primary hover:bg-primary hover:text-white hover:border-2 hover:border-primary"
+              : "bg-primary text-white hover:bg-white hover:text-primary"
           }`}
         >
           Shop Now
