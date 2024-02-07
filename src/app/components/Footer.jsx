@@ -1,8 +1,7 @@
 "use client";
-import react from "react";
+import React from "react";
 import { useState, useEffect } from "react";
 import { Image } from "cloudinary-react";
-import { Cloudinary } from "cloudinary-core";
 
 const Footer = () => {
   const [logoImageUrl, setLogoImageUrl] = useState(

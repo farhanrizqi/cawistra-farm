@@ -4,7 +4,6 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { Image } from "cloudinary-react";
 import { Cloudinary } from "cloudinary-core";
-import { Main } from "next/document";
 
 export default function Home() {
   const heroImage =
