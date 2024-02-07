@@ -74,7 +74,7 @@ export default function Home() {
         <section className="py-5 px-5">
           <div>
             <h1 className="text-primary text-center font-bold text-lg">
-              Let's Take a Look <br /> of Our Products
+              Let&apos;s Take a Look <br /> of Our Products
             </h1>
           </div>
           <div className="flex justify-evenly items-center">
