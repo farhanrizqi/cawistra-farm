@@ -14,7 +14,9 @@ const Footer = () => {
       <div className="container mx-auto flex flex-wrap items-center justify-between">
         {/* Logo dan Nama */}
         <div className="flex items-center">
-          <img
+          <Image
+            cloudName="ddrecezrk"
+            publicId={logoImageUrl}
             src={logoImageUrl} // Ganti dengan path logo sesuai struktur proyek Anda
             alt="Cawistra Farm Logo"
             className="w-12 h-12 mr-4" // Sesuaikan dengan ukuran logo Anda
