@@ -25,6 +25,9 @@ const Navbar = () => {
   };
 
   const cloudinaryCore = new Cloudinary({ cloud_name: "ddrecezrk" });
+  const phoneNumber = "+6282299927574"; // Ganti dengan nomor telepon yang benar
+  const encodedPhoneNumber = encodeURIComponent(phoneNumber);
+  const whatsappLink = `https://api.whatsapp.com/send?phone=${encodedPhoneNumber}`;
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -50,7 +53,7 @@ const Navbar = () => {
             <Image
               cloudName="ddrecezrk"
               publicId={logoImageUrl} // Gunakan variabel state untuk URL gambar
-              alt="Moody Shirt"
+              alt="Cawistra Farm"
               width={30}
               height={10}
               className="w-14 h-w-14"
@@ -58,6 +61,7 @@ const Navbar = () => {
           </div>
         </div>
         <a
+          href={whatsappLink}
           target="_blank"
           className={`py-2 px-4 rounded-full  transition-colors ${
             navbarSolid

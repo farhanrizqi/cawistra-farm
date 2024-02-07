@@ -1,8 +1,10 @@
 "use client";
 import React from "react";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import { Image } from "cloudinary-react";
 import { Cloudinary } from "cloudinary-core";
+import { Main } from "next/document";
 
 export default function Home() {
   const heroImage =
@@ -22,9 +24,9 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="h-screen mt-16">
+      <main className="py-20">
         {/* section title */}
-        <section className="w-screen pt-4 px-5">
+        <section className=" pt-4 px-5">
           <div>
             <h1 className="text-primary text-center font-bold text-xl">
               Welcome to <br /> Cawistra Farm
@@ -92,7 +94,7 @@ export default function Home() {
                 />
                 <a
                   target="_blank"
-                  className="mt-2 px-4 rounded-full text-sm text-center bg-secondary text-white border border-primary  hover:bg-primary cursor-pointer"
+                  className="w-24 h-10 mt-2 px-4 rounded-full text-sm text-center bg-secondary text-white border border-primary  hover:bg-primary cursor-pointer"
                 >
                   Shop Now
                 </a>
@@ -105,7 +107,7 @@ export default function Home() {
                 </div>
                 <a
                   target="_blank"
-                  className="mt-2 px-4 rounded-full text-sm text-center bg-secondary text-white border border-primary  hover:bg-primary cursor-pointer"
+                  className="w-24 h-10 mt-2 px-4 rounded-full text-sm text-center bg-secondary text-white border border-primary  hover:bg-primary cursor-pointer"
                 >
                   Shop Now
                 </a>
@@ -125,7 +127,7 @@ export default function Home() {
                 />
                 <a
                   target="_blank"
-                  className="mt-2 px-4 rounded-full text-sm text-center bg-secondary text-white border border-primary  hover:bg-primary cursor-pointer"
+                  className="w-24 h-10 mt-2 px-4 rounded-full text-sm text-center bg-secondary text-white border border-primary  hover:bg-primary cursor-pointer"
                 >
                   Shop Now
                 </a>
@@ -134,6 +136,7 @@ export default function Home() {
           </div>
         </section>
       </main>
+      <Footer />
     </>
   );
 }
