@@ -5,7 +5,7 @@ import { Image } from "cloudinary-react";
 
 const FooterAqiqah = () => {
   const [logoImageUrl, setLogoImageUrl] = useState(
-    "https://res.cloudinary.com/ddrecezrk/image/upload/v1706611886/cawistra/cawistrafarm/eiepyhfo4dwpptwy5etm.png"
+    "https://res.cloudinary.com/ddrecezrk/image/upload/v1707401639/png_20231119_211925_0000_aou0w2.png"
   );
 
   const phoneNumber = "082299927574"; // Ganti dengan nomor telepon yang benar
@@ -14,15 +14,15 @@ const FooterAqiqah = () => {
 
   return (
     <footer className="bg-secondary h-full text-white py-8 px-5">
-      <div className="container mx-auto flex flex-wrap items-center justify-between">
+      <div className="container mx-auto flex flex-wrap items-center justify-between  md:gap-2">
         {/* Logo dan Nama */}
-        <div className="flex items-center">
+        <div className="flex items-center md:flex-col md:items-end lg:flex-1">
           <Image
             cloudName="ddrecezrk"
             publicId={logoImageUrl}
             src={logoImageUrl} // Ganti dengan path logo sesuai struktur proyek Anda
             alt="Cawistra Farm Logo"
-            className="w-12 h-12 mr-4" // Sesuaikan dengan ukuran logo Anda
+            className="w-12 h-12 me-4 md:me-0 lg:w-20 lg:h-20" // Sesuaikan dengan ukuran logo Anda
           />
           <h1 className="text-2xl font-bold">Cawistra Aqiqah</h1>
         </div>
@@ -35,8 +35,8 @@ const FooterAqiqah = () => {
               <svg
                 className="hidden md:flex"
                 xmlns="http://www.w3.org/2000/svg"
-                width="2em"
-                height="2em"
+                width={22}
+                height={22}
                 viewBox="0 0 20 20"
               >
                 <path

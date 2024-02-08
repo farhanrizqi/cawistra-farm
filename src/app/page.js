@@ -55,7 +55,7 @@ export default function Home() {
         </section>
 
         {/* section about */}
-        <section className="flex px-5">
+        <section className="flex px-5 py-5">
           {/* left */}
           <div className="flex items-center justify-end h-auto w-full pe-2">
             <h1 className="text-primary text-end font-bold text-lg md:text-2xl">
@@ -112,7 +112,6 @@ export default function Home() {
                 <div className="w-24 h-12 md:w-36 md:h-14 rounded-full  bg-secondary text-white border border-primary  hover:bg-primary cursor-pointer">
                   <Link
                     href="/pages/aqiqah"
-                    target="_blank"
                     className="w-full h-full flex justify-center items-center rounded-full text-sm text-center md:text-lg"
                   >
                     Visit

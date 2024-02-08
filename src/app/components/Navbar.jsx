@@ -70,7 +70,7 @@ const Navbar = () => {
               : "bg-primary text-white hover:bg-white hover:text-primary"
           }`}
         >
-          Shop Now
+          Order Now
         </a>
       </div>
     </nav>

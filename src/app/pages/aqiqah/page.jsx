@@ -35,10 +35,10 @@ export default function Aqiqah() {
         {/* section title */}
         <section className=" pt-4 px-5">
           <div>
-            <h1 className="text-primary text-center font-bold text-xl">
+            <h1 className="text-primary text-center font-bold text-xl md:text-3xl">
               Welcome to <br /> Cawistra Aqiqah
             </h1>
-            <h2 className="text-primary text-center font-light text-sm">
+            <h2 className="text-primary text-center font-light text-sm md:text-lg">
               Blessed Beginnings, Joyful Traditions
             </h2>
           </div>
@@ -62,11 +62,11 @@ export default function Aqiqah() {
         <section className="flex px-5 py-5">
           {/* left */}
           <div className="flex flex-col items-end justify-center h-auto w-full pe-2">
-            <h1 className="text-primary text-end font-bold text-lg">
+            <h1 className="text-primary text-end font-bold text-lg  md:text-2xl">
               Why
               <br /> Cawistra Aqiqah
             </h1>
-            <p className="text-end text-xs">
+            <p className="text-end text-xs md:text-lg">
               Celebrate tradition effortlessly with Cawistra Aqiqah. Our premium
               service combines sacred rituals with top-notch quality, ensuring a
               meaningful and memorable Aqiqah ceremony for you and your loved
@@ -74,22 +74,23 @@ export default function Aqiqah() {
             </p>
           </div>
           {/* right */}
-          <div className="h-auto w-full ps-2">
+          <div className="h-auto w-full flex justify-between ps-2">
             <Image
-              className="rounded-xl"
               src={meetImage} // Ganti dengan path gambar sesuai struktur proyek Anda
               alt="Meet the Family"
               width="100%" // Menyesuaikan lebar gambar
               height={100}
-              crop="fill" // Crop gambar agar sesuai dengan lebar dan tinggi yang diinginkan // Tentukan tinggi gambar
+              crop="fill"
+              className="rounded-xl md:w-80 " // Crop gambar agar sesuai dengan lebar dan tinggi yang diinginkan // Tentukan tinggi gambar
             />
+            <div className="w-12 h-full bg-primary"></div>
           </div>
         </section>
 
         {/* section product */}
-        <section className="py-5 px-5">
+        <section className="py-5 px-5 lg:py-10">
           <div>
-            <h1 className="text-primary text-center font-bold text-lg">
+            <h1 className="text-primary text-center font-bold text-lg md:text-2xl">
               Some of Our Menu&apos;s
             </h1>
           </div>
@@ -97,11 +98,11 @@ export default function Aqiqah() {
             <div className="w-2/3 rounded-full border-2 border-primary flex items-center"></div>
           </div>
           <div className="flex justify-evenly items-center">
-            <div className="w-full h-full flex gap-4 pt-4">
+            <div className="w-full h-full flex justify-center gap-4 pt-4 lg:gap-20">
               <div className="flex flex-col items-center">
                 <div className="rounded-full p-1 bg-primary">
                   <Image
-                    className="rounded-full h-24 w-24"
+                    className="rounded-full h-24 w-24 md:w-32 md:h-32 lg:w-44 lg:h-44"
                     src={menu1Image} // Ganti dengan path gambar sesuai struktur proyek Anda
                     alt="Farm"
                     width="100%" // Menyesuaikan lebar gambar
@@ -118,7 +119,7 @@ export default function Aqiqah() {
               <div className="flex flex-col  items-center">
                 <div className="rounded-full p-1 bg-primary">
                   <Image
-                    className="rounded-full h-24 w-24"
+                    className="rounded-full h-24 w-24 md:w-32 md:h-32 lg:w-44 lg:h-44"
                     src={menu2Image} // Ganti dengan path gambar sesuai struktur proyek Anda
                     alt="Farm"
                     width="100%" // Menyesuaikan lebar gambar
@@ -135,7 +136,7 @@ export default function Aqiqah() {
               <div className="flex flex-col  items-center">
                 <div className="rounded-full p-1 bg-primary">
                   <Image
-                    className="rounded-full h-24 w-24"
+                    className="rounded-full h-24 w-24 md:w-32 md:h-32 lg:w-44 lg:h-44"
                     src={menu3Image} // Ganti dengan path gambar sesuai struktur proyek Anda
                     alt="Farm"
                     width="100%" // Menyesuaikan lebar gambar
@@ -155,18 +156,18 @@ export default function Aqiqah() {
 
         {/* section cta */}
         <section className="flex flex-col justify-center items-center gap-2">
-          <div className="w-52 rounded-full  bg-secondary text-white border border-primary  hover:bg-primary cursor-pointer">
+          <div className="w-52 rounded-full  bg-secondary text-white border border-primary  hover:bg-primary cursor-pointer md:w-80 md:h-12">
             <Link
               href={whatsappLink}
               target="_blank"
-              className="w-full h-full py-2 flex justify-center items-center rounded-full text-sm text-center"
+              className="w-full h-full py-2 flex justify-center items-center rounded-full text-sm text-center md:text-lg"
             >
               Order Now
             </Link>
           </div>
-          <div className="w-52 flex items-center rounded-full gap-2 bg-primary text-white border border-secondary  hover:bg-secondary cursor-pointer">
+          <div className="w-52 flex items-center rounded-full gap-2 bg-primary text-white border border-secondary  hover:bg-secondary cursor-pointer md:w-80 md:h-12">
             <svg
-              className="ps-2 rounded-full"
+              className="ps-2 rounded-full md:w-12"
               xmlns="http://www.w3.org/2000/svg"
               width="2em"
               height="2em"
@@ -182,8 +183,7 @@ export default function Aqiqah() {
             </svg>
             <Link
               href="/"
-              target="_blank"
-              className="w-full h-full pe-2 py-2 flex justify-center items-center rounded-full text-sm text-center"
+              className="w-full h-full pe-2 py-2 flex justify-center items-center rounded-full text-sm text-center md:text-lg"
             >
               Back to Cawistra Farm
             </Link>

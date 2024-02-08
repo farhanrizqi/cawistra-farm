@@ -45,11 +45,11 @@ const NavbarAqiqah = () => {
           : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto px-5 flex justify-between items-center py-4">
+      <div className="container mx-auto px-5 flex justify-between items-center py-4 md:justify-evenly md:gap-10">
         <div>
-          <h1 className="font-bold">Cawistra Aqiqah</h1>
+          <h1 className="font-bold md:text-xl text-primary">Cawistra Aqiqah</h1>
         </div>
-        <div className="flex items-center">
+        <div className="flex items-center md:me-10 lg:me-10">
           <div className="rounded-full">
             <Image
               cloudName="ddrecezrk"
@@ -57,7 +57,7 @@ const NavbarAqiqah = () => {
               alt="Cawistra Farm"
               width={30}
               height={10}
-              className="w-14 h-w-14"
+              className="w-14 h-w-14 md:w-20"
             />
           </div>
         </div>
