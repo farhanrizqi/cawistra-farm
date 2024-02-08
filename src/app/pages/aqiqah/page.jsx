@@ -1,12 +1,12 @@
 "use client";
 import React from "react";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 import { Image } from "cloudinary-react";
 import { Cloudinary } from "cloudinary-core";
 import Link from "next/link";
 
-export default function Home() {
+export default function Aqiqah() {
   const heroImage =
     "https://res.cloudinary.com/ddrecezrk/image/upload/v1707046170/cawistra/cawistrafarm/fbrgxbaymolukbz4vd3a.jpg";
 
@@ -114,7 +114,7 @@ export default function Home() {
                 </div>
                 <div className="w-24 h-12 rounded-full  bg-secondary text-white border border-primary  hover:bg-primary cursor-pointer">
                   <Link
-                    href="/pages/aqiqah"
+                    href="/"
                     target="_blank"
                     className="w-full h-full flex justify-center items-center rounded-full text-sm text-center"
                   >

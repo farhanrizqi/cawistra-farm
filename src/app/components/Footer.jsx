@@ -8,6 +8,10 @@ const Footer = () => {
     "https://res.cloudinary.com/ddrecezrk/image/upload/v1706611886/cawistra/cawistrafarm/eiepyhfo4dwpptwy5etm.png"
   );
 
+  const phoneNumber = "082299927574"; // Ganti dengan nomor telepon yang benar
+  const encodedPhoneNumber = encodeURIComponent(phoneNumber);
+  const whatsappLink = `https://api.whatsapp.com/send?phone=${encodedPhoneNumber}`;
+
   return (
     <footer className="bg-secondary h-full text-white py-8 px-5">
       <div className="container mx-auto flex flex-wrap items-center justify-between">
@@ -116,7 +120,9 @@ const Footer = () => {
                   />
                 </g>
               </svg>
-              <p>+62 822-9992-7574</p>
+              <a href={whatsappLink} target="_blank" className="text-white">
+                +62 822-9992-7574
+              </a>
             </div>
           </div>
         </div>
