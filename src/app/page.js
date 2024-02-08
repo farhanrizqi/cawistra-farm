@@ -83,7 +83,7 @@ export default function Home() {
           </div>
           <div className="flex justify-evenly items-center">
             <div className="w-full h-full flex gap-4">
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col items-center gap-2">
                 <Image
                   src={sheepImage} // Ganti dengan path gambar sesuai struktur proyek Anda
                   alt="Farm"
@@ -106,7 +106,7 @@ export default function Home() {
                   </Link>
                 </div>
               </div>
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col items-center gap-2">
                 <div className="h-full flex justify-center items-center">
                   <h1 className="h-full text-center text-lg pt-7 px-2">
                     AQIQAH
@@ -122,7 +122,7 @@ export default function Home() {
                   </Link>
                 </div>
               </div>
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col items-center gap-2">
                 <Image
                   src={cowImage} // Ganti dengan path gambar sesuai struktur proyek Anda
                   alt="Farm"

@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { Image } from "cloudinary-react";
 import { Cloudinary } from "cloudinary-core";
 
-const Navbar = () => {
+const NavbarAqiqah = () => {
   const [navbarSolid, setNavbarSolid] = useState(false);
   const [logoImageUrl, setLogoImageUrl] = useState(
     "https://res.cloudinary.com/ddrecezrk/image/upload/v1706611886/cawistra/cawistrafarm/eiepyhfo4dwpptwy5etm.png"
@@ -47,7 +47,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-5 flex justify-between items-center py-4">
         <div>
-          <h1 className="font-bold">Cawistra Farm</h1>
+          <h1 className="font-bold">Cawistra Aqiqah</h1>
         </div>
         <div className="flex items-center">
           <div className="rounded-full">
@@ -70,11 +70,11 @@ const Navbar = () => {
               : "bg-primary text-white hover:bg-white hover:text-primary"
           }`}
         >
-          Shop Now
+          Order Now
         </a>
       </div>
     </nav>
   );
 };
 
-export default Navbar;
+export default NavbarAqiqah;
