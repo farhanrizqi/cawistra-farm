@@ -32,10 +32,10 @@ export default function Home() {
         {/* section title */}
         <section className=" pt-4 px-5">
           <div>
-            <h1 className="text-primary text-center font-bold text-xl">
+            <h1 className="text-primary text-center font-bold text-xl md:text-3xl">
               Welcome to <br /> Cawistra Farm
             </h1>
-            <h3 className="text-primary text-center font-light text-sm">
+            <h3 className="text-primary text-center font-light text-sm md:text-lg">
               Your Source for Premium Livestock
             </h3>
           </div>
@@ -58,7 +58,7 @@ export default function Home() {
         <section className="flex px-5">
           {/* left */}
           <div className="flex items-center justify-end h-auto w-full pe-2">
-            <h1 className="text-primary text-end font-bold text-lg">
+            <h1 className="text-primary text-end font-bold text-lg md:text-2xl">
               Meet the <br /> Cawistra Family
             </h1>
           </div>
@@ -69,20 +69,21 @@ export default function Home() {
               alt="Meet the Family"
               width="100%" // Menyesuaikan lebar gambar
               height={100}
-              crop="fill" // Crop gambar agar sesuai dengan lebar dan tinggi yang diinginkan // Tentukan tinggi gambar
+              crop="fill"
+              className="rounded-xl md:w-80 lg:w-96" // Crop gambar agar sesuai dengan lebar dan tinggi yang diinginkan // Tentukan tinggi gambar
             />
           </div>
         </section>
 
         {/* section product */}
-        <section className="py-5 px-5">
+        <section className="py-5 px-5 lg:py-10">
           <div>
-            <h1 className="text-primary text-center font-bold text-lg">
+            <h1 className="text-primary text-center font-bold text-lg md:text-2xl">
               Let&apos;s Take a Look <br /> of Our Products
             </h1>
           </div>
           <div className="flex justify-evenly items-center">
-            <div className="w-full h-full flex gap-4">
+            <div className="w-full h-full flex justify-center gap-4">
               <div className="flex flex-col items-center gap-2">
                 <Image
                   src={sheepImage} // Ganti dengan path gambar sesuai struktur proyek Anda
@@ -90,33 +91,29 @@ export default function Home() {
                   width="100%" // Menyesuaikan lebar gambar
                   height={100}
                   crop="fill"
-                  media={{
-                    "(max-width: 640px)": { width: "100vw" }, // Ukuran untuk handphone
-                    "(max-width: 768px)": { width: "10vw" }, // Ukuran untuk tablet
-                    "(min-width: 769px)": { width: "60vw" }, // Ukuran untuk laptop
-                  }} // Crop gambar agar sesuai dengan lebar dan tinggi yang diinginkan // Tentukan tinggi gambar
+                  className="md:w-64" // Crop gambar agar sesuai dengan lebar dan tinggi yang diinginkan // Tentukan tinggi gambar
                 />
-                <div className="w-24 h-9 rounded-full  bg-secondary text-white border border-primary  hover:bg-primary cursor-pointer">
+                <div className="w-24 h-9 md:w-36 md:h-11 rounded-full  bg-secondary text-white border border-primary  hover:bg-primary cursor-pointer">
                   <Link
                     href={whatsappLink}
                     target="_blank"
-                    className="w-full h-full flex justify-center items-center rounded-full text-sm text-center"
+                    className="w-full h-full flex justify-center items-center rounded-full text-sm text-center md:text-lg"
                   >
-                    Shop Now
+                    Order Now
                   </Link>
                 </div>
               </div>
               <div className="flex flex-col items-center gap-2">
                 <div className="h-full flex justify-center items-center">
-                  <h1 className="h-full text-center text-lg pt-7 px-2">
+                  <h1 className=" text-center text-lg px-2 md:text-5xl">
                     AQIQAH
                   </h1>
                 </div>
-                <div className="w-24 h-12 rounded-full  bg-secondary text-white border border-primary  hover:bg-primary cursor-pointer">
+                <div className="w-24 h-12 md:w-36 md:h-14 rounded-full  bg-secondary text-white border border-primary  hover:bg-primary cursor-pointer">
                   <Link
                     href="/pages/aqiqah"
                     target="_blank"
-                    className="w-full h-full flex justify-center items-center rounded-full text-sm text-center"
+                    className="w-full h-full flex justify-center items-center rounded-full text-sm text-center md:text-lg"
                   >
                     Visit
                   </Link>
@@ -129,19 +126,15 @@ export default function Home() {
                   width="100%" // Menyesuaikan lebar gambar
                   height={100}
                   crop="fill"
-                  media={{
-                    "(max-width: 640px)": { width: "100vw" }, // Ukuran untuk handphone
-                    "(max-width: 768px)": { width: "80vw" }, // Ukuran untuk tablet
-                    "(min-width: 769px)": { width: "60vw" }, // Ukuran untuk laptop
-                  }} // Crop gambar agar sesuai dengan lebar dan tinggi yang diinginkan // Tentukan tinggi gambar
+                  className="md:w-64" // Crop gambar agar sesuai dengan lebar dan tinggi yang diinginkan // Tentukan tinggi gambar
                 />
-                <div className="w-24 h-9 rounded-full  bg-secondary text-white border border-primary  hover:bg-primary cursor-pointer">
+                <div className="w-24 h-9 md:w-36 md:h-11 rounded-full  bg-secondary text-white border border-primary  hover:bg-primary cursor-pointer">
                   <Link
                     href={whatsappLink}
                     target="_blank"
-                    className="w-full h-full flex justify-center items-center rounded-full text-sm text-center"
+                    className="w-full h-full flex justify-center items-center rounded-full text-sm text-center md:text-lg"
                   >
-                    Shop Now
+                    Order Now
                   </Link>
                 </div>
               </div>

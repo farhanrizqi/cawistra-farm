@@ -13,18 +13,18 @@ const Footer = () => {
   const whatsappLink = `https://api.whatsapp.com/send?phone=${encodedPhoneNumber}`;
 
   return (
-    <footer className="bg-secondary h-full text-white py-8 px-5">
-      <div className="container mx-auto flex flex-wrap items-center justify-between">
+    <footer className="bg-secondary h-full text-white py-8 px-5 ">
+      <div className="container mx-auto flex flex-wrap items-center justify-between md:gap-2">
         {/* Logo dan Nama */}
-        <div className="flex items-center">
+        <div className="flex items-center md:flex-col md:items-end lg:flex-1">
           <Image
             cloudName="ddrecezrk"
             publicId={logoImageUrl}
             src={logoImageUrl} // Ganti dengan path logo sesuai struktur proyek Anda
             alt="Cawistra Farm Logo"
-            className="w-12 h-12 mr-4" // Sesuaikan dengan ukuran logo Anda
+            className="w-12 h-12 me-4 md:me-0 lg:w-20 lg:h-20" // Sesuaikan dengan ukuran logo Anda
           />
-          <h2 className="text-2xl font-bold">Cawistra Farm</h2>
+          <h2 className="text-2xl font-bold lg:text-3xl">Cawistra Farm</h2>
         </div>
 
         {/* Detail Kontak */}
@@ -35,8 +35,8 @@ const Footer = () => {
               <svg
                 className="hidden md:flex"
                 xmlns="http://www.w3.org/2000/svg"
-                width="2em"
-                height="2em"
+                width={22}
+                height={22}
                 viewBox="0 0 20 20"
               >
                 <path

@@ -11,7 +11,7 @@ export default function Aqiqah() {
     "https://res.cloudinary.com/ddrecezrk/image/upload/v1707394490/cawistra/cawistrafarm/udznnxiotml4dzu7nzy4.jpg";
 
   const meetImage =
-    "https://res.cloudinary.com/ddrecezrk/image/upload/v1707397168/meet_izouoq.jpg";
+    "https://res.cloudinary.com/ddrecezrk/image/upload/v1707401959/WhatsApp_Image_2024-02-08_at_9.14.30_PM_yna3pn.jpg";
 
   const menu3Image =
     "https://res.cloudinary.com/ddrecezrk/image/upload/v1707397174/menu3_vxoik7.jpg";

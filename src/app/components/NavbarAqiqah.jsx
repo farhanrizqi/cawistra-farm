@@ -7,19 +7,19 @@ import { Cloudinary } from "cloudinary-core";
 const NavbarAqiqah = () => {
   const [navbarSolid, setNavbarSolid] = useState(false);
   const [logoImageUrl, setLogoImageUrl] = useState(
-    "https://res.cloudinary.com/ddrecezrk/image/upload/v1706611886/cawistra/cawistrafarm/eiepyhfo4dwpptwy5etm.png"
+    "https://res.cloudinary.com/ddrecezrk/image/upload/v1707401639/png_20231119_211925_0000_aou0w2.png"
   );
 
   const handleScroll = () => {
     if (window.scrollY > 20) {
       setNavbarSolid(true);
       setLogoImageUrl(
-        "https://res.cloudinary.com/ddrecezrk/image/upload/v1706611886/cawistra/cawistrafarm/eiepyhfo4dwpptwy5etm.png"
+        "https://res.cloudinary.com/ddrecezrk/image/upload/v1707401639/png_20231119_211925_0000_aou0w2.png"
       );
     } else {
       setNavbarSolid(false);
       setLogoImageUrl(
-        "https://res.cloudinary.com/ddrecezrk/image/upload/v1706611886/cawistra/cawistrafarm/eiepyhfo4dwpptwy5etm.png"
+        "https://res.cloudinary.com/ddrecezrk/image/upload/v1707401639/png_20231119_211925_0000_aou0w2.png"
       );
     }
   };
