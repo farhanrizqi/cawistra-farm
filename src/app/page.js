@@ -21,7 +21,7 @@ export default function Home() {
 
   const cloudinaryCore = new Cloudinary({ cloud_name: "ddrecezrk" });
 
-  const phoneNumber = "082299927574"; // Ganti dengan nomor telepon yang benar
+  const phoneNumber = "081214839040"; // Ganti dengan nomor telepon yang benar
   const encodedPhoneNumber = encodeURIComponent(phoneNumber);
   const whatsappLink = `https://api.whatsapp.com/send?phone=${encodedPhoneNumber}`;
 
